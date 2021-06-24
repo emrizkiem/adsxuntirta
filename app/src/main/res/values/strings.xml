@@ -8,4 +8,8 @@
     <string name="calculate">Hitung</string>
     <string name="result">Hasil</string>
     <string name="logo">Logo</string>
+    <string name="move_activity">Pindah Activity</string>
+    <string name="activity_with_data">pindah activity dengan data</string>
+    <string name="dial_a_number">Dial a number</string>
+    <string name="data_received">Data Diterima</string>
 </resources>

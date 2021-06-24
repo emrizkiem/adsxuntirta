@@ -17,6 +17,7 @@ import dev.emrizkiem.ecommerce.learn.ui.fragment.MainFragment
 
 class MainActivity : AppCompatActivity(){
 
+    // Initialize viewPager and tabLayout
     private lateinit var viewPager: ViewPager2
     private lateinit var tabLayout: TabLayout
 
@@ -27,12 +28,15 @@ class MainActivity : AppCompatActivity(){
         setContentView(R.layout.activity_main)
         Log.d("Lifecycle", "Method onCreate Activity running")
 
+        // Hubungkan variable yg sudah dibuat diatas dengan id yg ada di activity_main.xml
         viewPager = findViewById(R.id.viewPager)
         tabLayout = findViewById(R.id.tabLayout)
 
+        // Initialize ViewPagerAdapter
         val adapter = ViewPagerAdapter(supportFragmentManager, lifecycle)
         viewPager.adapter = adapter
 
+        // Called to configure the tab for the page at the specified position
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
             tab.text = menusTab[position]
         }.attach()

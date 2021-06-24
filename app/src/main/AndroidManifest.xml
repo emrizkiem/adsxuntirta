@@ -11,7 +11,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity android:name=".implement.feature.splash.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,12 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".learn.ui.activity.MainActivity"/>
-        <activity android:name=".learn.intent.IntentActivity" />
-        <activity android:name=".learn.recyclerview.RecyclerviewActivity" />
-        <activity android:name=".learn.intent.DetailActivity" />
-
+        <activity android:name=".learn.ui.activity.MainActivity" />
+        <activity android:name=".learn.ui.fragment.intent.DetailActivity"/>
     </application>
 
 </manifest>
