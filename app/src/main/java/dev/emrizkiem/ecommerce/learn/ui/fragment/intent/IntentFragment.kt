@@ -35,6 +35,10 @@ class IntentFragment : Fragment(), View.OnClickListener {
     // Function when button clicked
     override fun onClick(v: View?) {
         when (v?.id) {
+            
+            
+            
+            
             R.id.btn_move_activity -> {
                 val intent = Intent(context, DetailActivity::class.java)
                 startActivity(intent)

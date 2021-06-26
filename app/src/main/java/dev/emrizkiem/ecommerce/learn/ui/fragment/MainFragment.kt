@@ -2,7 +2,6 @@ package dev.emrizkiem.ecommerce.learn.ui.fragment
 
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,6 +9,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.core.widget.addTextChangedListener
+import androidx.fragment.app.Fragment
 import dev.emrizkiem.ecommerce.R
 
 class MainFragment : Fragment(), View.OnClickListener {
@@ -19,10 +19,6 @@ class MainFragment : Fragment(), View.OnClickListener {
     private lateinit var btnCalculate: Button
     private lateinit var tvResult: TextView
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        Log.d("Lifecycle", "Method onCreate Fragment Started")
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

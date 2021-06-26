@@ -2,18 +2,12 @@ package dev.emrizkiem.ecommerce.learn.ui.activity
 
 import android.os.Bundle
 import android.util.Log
-import android.view.View
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.FragmentManager
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import dev.emrizkiem.ecommerce.R
 import dev.emrizkiem.ecommerce.learn.adapter.ViewPagerAdapter
-import dev.emrizkiem.ecommerce.learn.ui.fragment.MainFragment
 
 class MainActivity : AppCompatActivity(){
 
