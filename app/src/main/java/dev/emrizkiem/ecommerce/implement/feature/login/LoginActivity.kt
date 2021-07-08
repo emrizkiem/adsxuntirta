@@ -1,5 +1,6 @@
 package dev.emrizkiem.ecommerce.implement.feature.login
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -8,6 +9,7 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.core.widget.addTextChangedListener
 import dev.emrizkiem.ecommerce.R
+import dev.emrizkiem.ecommerce.implement.feature.register.RegisterActivity
 
 class LoginActivity : AppCompatActivity() {
 
@@ -26,6 +28,11 @@ class LoginActivity : AppCompatActivity() {
         tvNewAccount = findViewById(R.id.tv_new_account)
 
         validation()
+
+        tvNewAccount.setOnClickListener {
+            val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun validation() {

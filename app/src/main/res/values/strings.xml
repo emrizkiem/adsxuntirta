@@ -16,5 +16,9 @@
     <string name="password">Password</string>
     <string name="hint_password">Enter your Password</string>
     <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
     <string name="new_account">Create New Account</string>
+    <string name="tv_msg_register">Hello! \nSignUp to \nget started</string>
+    <string name="fullname">Fullname</string>
+    <string name="hint_fullname">Enter your Fullname</string>
 </resources>
