@@ -25,9 +25,7 @@ class RecyclerviewAdapter(
                 .load(item.image)
                 .into(imgHero)
 
-            itemView.setOnClickListener {
-                listener(item)
-            }
+            itemView.setOnClickListener { listener(item) }
         }
     }
 
@@ -40,5 +38,31 @@ class RecyclerviewAdapter(
     }
 
     override fun getItemCount() = heroes.size
+
+//    inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+//        var tvName: TextView = view.findViewById(R.id.tv_hero_name)
+//        var imgHero: ImageView = view.findViewById(R.id.img_heroes)
+//
+//        fun bindItem(item: Hero) {
+//            tvName.text = item.name
+//            Glide.with(itemView.context)
+//                .load(item.image)
+//                .into(imgHero)
+//
+//            itemView.setOnClickListener {
+//                listener(item)
+//            }
+//        }
+//    }
+//
+//    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+//        return ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_hero, parent, false))
+//    }
+//
+//    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+//        holder.bindItem(heroes[position])
+//    }
+//
+//    override fun getItemCount() = heroes.size
 
 }

@@ -10,4 +10,11 @@
     <string name="activity_with_data">pindah activity dengan data</string>
     <string name="dial_a_number">Dial a number</string>
     <string name="data_received">Data Diterima</string>
+    <string name="tv_msg_login">Hello Again!\nWelcome back</string>
+    <string name="email">Email</string>
+    <string name="hint_email">Enter your email Address</string>
+    <string name="password">Password</string>
+    <string name="hint_password">Enter your Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="new_account">Create New Account</string>
 </resources>
