@@ -9,6 +9,7 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.core.widget.addTextChangedListener
 import dev.emrizkiem.ecommerce.R
+import dev.emrizkiem.ecommerce.implement.feature.home.HomeActivity
 import dev.emrizkiem.ecommerce.implement.feature.register.RegisterActivity
 
 class LoginActivity : AppCompatActivity() {
@@ -28,6 +29,12 @@ class LoginActivity : AppCompatActivity() {
         tvNewAccount = findViewById(R.id.tv_new_account)
 
         validation()
+
+        btnLogin.setOnClickListener {
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
 
         tvNewAccount.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)

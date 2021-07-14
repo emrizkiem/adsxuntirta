@@ -21,4 +21,12 @@
     <string name="tv_msg_register">Hello! \nSignUp to \nget started</string>
     <string name="fullname">Fullname</string>
     <string name="hint_fullname">Enter your Fullname</string>
+    <string name="tv_title_home">Toko smi untirta</string>
+    <string name="tv_subtitle_home">Studio Manajemen Industri</string>
+    <string name="tv_browse_room">Browse the Room \nThat we Designed for you</string>
+    <string name="live_room">Live Room</string>
+    <string name="children_room">Children Room</string>
+    <string name="bed_room">Bed Room</string>
+    <string name="decoration">Decoration</string>
+    <string name="tv_just_arrived">Just arrived \nThis Summer for you</string>
 </resources>
