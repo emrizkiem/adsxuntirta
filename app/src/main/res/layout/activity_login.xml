@@ -84,23 +84,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_login"
+        style="@style/Widget.MaterialComponents.Button.Icon"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginTop="32dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/bg_button_primary_rounded"
-        android:text="@string/sign_in"
-        android:textSize="18sp"
-        android:textColor="@color/white"
-        android:fontFamily="@font/fira_sans_bold"
-        android:textAllCaps="true"
+        android:fontFamily="@font/fira_sans_medium"
         android:letterSpacing="0.05346"
-        app:layout_constraintTop_toBottomOf="@+id/et_password"
+        android:text="@string/sign_in"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textAllCaps="true"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@+id/et_password" />
 
     <TextView
         android:id="@+id/tv_new_account"
