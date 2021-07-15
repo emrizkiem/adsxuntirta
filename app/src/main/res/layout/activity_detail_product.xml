@@ -1,171 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".implement.feature.detail.DetailProductActivity">
 
-    <View
-        android:id="@+id/bg"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:background="@drawable/bg_primary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/tv_title_home"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:fontFamily="@font/fira_sans_bold"
-        android:text="@string/tv_title_home"
-        android:textAllCaps="true"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/tv_subtitle_home"
-        app:layout_constraintStart_toStartOf="parent" />
+        <View
+            android:id="@+id/bg"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/bg_primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tv_subtitle_home"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="16dp"
-        android:fontFamily="@font/fira_sans"
-        android:text="@string/tv_subtitle_home"
-        android:textColor="@color/white"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="@+id/bg"
-        app:layout_constraintStart_toStartOf="@+id/bg" />
+        <TextView
+            android:id="@+id/tv_title_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/fira_sans_bold"
+            android:text="@string/tv_title_home"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_subtitle_home"
+            app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:id="@+id/ic_cart"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:src="@drawable/ic_cart"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_subtitle_home"
-        app:layout_constraintEnd_toEndOf="@+id/bg"
-        app:layout_constraintTop_toTopOf="@+id/tv_title_home" />
+        <TextView
+            android:id="@+id/tv_subtitle_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/fira_sans"
+            android:text="@string/tv_subtitle_home"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/bg"
+            app:layout_constraintStart_toStartOf="@+id/bg" />
 
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/view_pager"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/tab_layout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bg" />
+        <ImageView
+            android:id="@+id/ic_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_cart"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_subtitle_home"
+            app:layout_constraintEnd_toEndOf="@+id/bg"
+            app:layout_constraintTop_toTopOf="@+id/tv_title_home" />
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tab_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="25dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view_pager"
-        app:layout_constraintBottom_toTopOf="@+id/tv_name_product"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:tabBackground="@drawable/tab_selector"
-        app:tabGravity="center"
-        app:tabIndicatorHeight="0dp" />
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/tab_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bg" />
 
-    <TextView
-        android:id="@+id/tv_name_product"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:fontFamily="@font/fira_sans_bold"
-        android:text="Chair Thatty"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tab_layout" />
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_name_product"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_pager"
+            app:tabBackground="@drawable/tab_selector"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp" />
 
-    <TextView
-        android:id="@+id/tv_price_product"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="6dp"
-        android:layout_marginEnd="16dp"
-        android:text="Rp1.200.000"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_name_product" />
+        <TextView
+            android:id="@+id/tv_name_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/fira_sans_bold"
+            android:text="Chair Thatty"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tab_layout" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_add_to_cart"
-        style="@style/Widget.MaterialComponents.Button.Icon"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/bg_button_primary_rounded"
-        android:fontFamily="@font/fira_sans_medium"
-        android:letterSpacing="0.05346"
-        android:text="@string/cart"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        app:backgroundTint="@null"
-        app:icon="@drawable/ic_cart"
-        app:iconGravity="textStart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_price_product" />
+        <TextView
+            android:id="@+id/tv_price_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="16dp"
+            android:text="Rp1.200.000"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name_product" />
 
-    <View
-        android:id="@+id/guideline"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="24dp"
-        android:background="@color/grey"
-        app:layout_constraintTop_toBottomOf="@+id/btn_add_to_cart"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_add_to_cart"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bg_button_primary_rounded"
+            android:fontFamily="@font/fira_sans_medium"
+            android:letterSpacing="0.05346"
+            android:text="@string/cart"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:backgroundTint="@null"
+            app:icon="@drawable/ic_cart"
+            app:iconGravity="textStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_price_product" />
 
-    <TextView
-        android:id="@+id/tv_about_product"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:fontFamily="@font/fira_sans_medium"
-        android:text="@string/about_the_product"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@+id/guideline"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        <View
+            android:id="@+id/guideline"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_add_to_cart" />
 
-    <TextView
-        android:id="@+id/tv_desc_product"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:fontFamily="@font/fira_sans"
-        android:text="Lorem Ipsum Dolor Sit Amet, Consectetur
+        <TextView
+            android:id="@+id/tv_about_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/fira_sans_medium"
+            android:text="@string/about_the_product"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guideline" />
+
+        <TextView
+            android:id="@+id/tv_desc_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/fira_sans"
+            android:text="Lorem Ipsum Dolor Sit Amet, Consectetur
 Adipiscing Elit. Fusce
 Tristique Urna Sed…"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@+id/tv_about_product"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_about_product" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

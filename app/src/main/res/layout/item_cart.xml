@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_product"
+        android:layout_width="94dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_product_detail"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shapeAppearanceOverlay="@style/roundedImageView"/>
+
+    <TextView
+        android:id="@+id/tv_name_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="20dp"
+        android:text="Chair Thatty"
+        android:fontFamily="@font/fira_sans_medium"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/img_product"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_desc_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="20dp"
+        android:text="Office Room"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/img_product"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name_product"/>
+
+    <TextView
+        android:id="@+id/tv_price_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="20dp"
+        android:text="Rp1.200.000"
+        android:fontFamily="@font/fira_sans_bold"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/img_product"
+        app:layout_constraintTop_toBottomOf="@+id/tv_desc_product"/>
+
+    <ImageView
+        android:id="@+id/ic_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_remove"
+        app:layout_constraintTop_toTopOf="@+id/img_product"
+        app:layout_constraintBottom_toBottomOf="@id/img_product"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

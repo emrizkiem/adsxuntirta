@@ -31,4 +31,14 @@
     <string name="tv_just_arrived">Just arrived \nThis Summer for you</string>
     <string name="cart">Add to Cart</string>
     <string name="about_the_product">About the product</string>
+    <string name="shopping_cart">Shopping Cart</string>
+    <string name="complete_name">Complete Name</string>
+    <string name="hint_complete_name">Enter your Complete Name</string>
+    <string name="address">Address</string>
+    <string name="hint_address">Enter your full Address</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="hint_phone_number">Enter your Phone Number</string>
+    <string name="choose_courier">Choose Courier</string>
+    <string name="choose_payment">Choose Payment</string>
+    <string name="checkout_now">Checkout Now</string>
 </resources>

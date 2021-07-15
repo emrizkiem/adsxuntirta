@@ -1,12 +1,15 @@
 package dev.emrizkiem.ecommerce.implement.feature.detail
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
+import android.widget.ImageView
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import dev.emrizkiem.ecommerce.R
+import dev.emrizkiem.ecommerce.implement.feature.cart.CartActivity
 
 class DetailProductActivity : AppCompatActivity() {
 
@@ -40,6 +43,8 @@ class DetailProductActivity : AppCompatActivity() {
         viewPager = findViewById(R.id.view_pager)
         tabLayout = findViewById(R.id.tab_layout)
 
+        val icCart: ImageView = findViewById(R.id.ic_cart)
+
         val viewPagerAdapter = ImageProductAdapter()
         viewPager.adapter = viewPagerAdapter
         viewPager.registerOnPageChangeCallback(listenerPage)
@@ -47,6 +52,11 @@ class DetailProductActivity : AppCompatActivity() {
             viewPager.setCurrentItem(positionImageProduct, false)
         }.attach()
         slideOnImageProduct()
+
+        icCart.setOnClickListener {
+            val intent = Intent(this, CartActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onStop() {
