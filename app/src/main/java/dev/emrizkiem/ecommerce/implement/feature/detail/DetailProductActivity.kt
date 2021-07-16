@@ -63,6 +63,7 @@ class DetailProductActivity : AppCompatActivity() {
         icCart.setOnClickListener {
             val intent = Intent(this, CartActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
         addToCart()

@@ -13,10 +13,11 @@
         <entry key="app/src/main/res/drawable/bg_primary.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/button_selector.xml" value="0.2574074074074074" />
         <entry key="app/src/main/res/drawable/ic_cart.xml" value="0.39351851851851855" />
+        <entry key="app/src/main/res/drawable/ic_logout.xml" value="0.2574074074074074" />
         <entry key="app/src/main/res/drawable/tab_selector.xml" value="0.2574074074074074" />
         <entry key="app/src/main/res/layout/activity_cart.xml" value="0.27375485694101026" />
         <entry key="app/src/main/res/layout/activity_detail_product.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.4036458333333333" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.4036458333333333" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.4036458333333333" />
