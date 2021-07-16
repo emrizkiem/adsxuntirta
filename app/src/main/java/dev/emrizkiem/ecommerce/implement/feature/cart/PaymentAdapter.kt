@@ -14,7 +14,12 @@ class PaymentAdapter(
 ): RecyclerView.Adapter<PaymentAdapter.ViewHolder>() {
 
     private var paymentSelected = 0
-    private lateinit var recyclerView: RecyclerView
+    private lateinit var rv: RecyclerView
+
+    override fun onAttachedToRecyclerView(recyclerView: RecyclerView) {
+        rv = recyclerView
+        super.onAttachedToRecyclerView(recyclerView)
+    }
 
     @Suppress("DEPRECATION")
     inner class ViewHolder(view: View): RecyclerView.ViewHolder(view) {
@@ -44,7 +49,7 @@ class PaymentAdapter(
 
         private fun resetChildAt(position: Int) {
             if (paymentSelected != -1 && paymentSelected != position)
-                recyclerView.getChildAt(paymentSelected).apply {
+                rv.getChildAt(paymentSelected).apply {
                     isSelected = false
                     elevation = 0F
                 }

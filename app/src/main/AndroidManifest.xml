@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".implement.feature.success.SuccessActivity"
+            android:exported="true" />
+        <activity
             android:name=".implement.feature.cart.CartActivity"
             android:exported="true" />
         <activity

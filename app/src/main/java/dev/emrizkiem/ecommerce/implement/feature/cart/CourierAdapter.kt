@@ -12,7 +12,12 @@ import dev.emrizkiem.ecommerce.implement.data.Courier
 class CourierAdapter(private val list: List<Courier>) : RecyclerView.Adapter<CourierAdapter.ViewHolder>() {
 
     private var courierSelected = 0
-    private lateinit var recyclerView: RecyclerView
+    private lateinit var rv: RecyclerView
+
+    override fun onAttachedToRecyclerView(recyclerView: RecyclerView) {
+        rv = recyclerView
+        super.onAttachedToRecyclerView(recyclerView)
+    }
 
     @Suppress("DEPRECATION")
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -43,7 +48,7 @@ class CourierAdapter(private val list: List<Courier>) : RecyclerView.Adapter<Cou
 
         private fun resetChildAt(position: Int) {
             if (courierSelected != -1 && courierSelected != position)
-                recyclerView.getChildAt(courierSelected).apply {
+                rv.getChildAt(courierSelected).apply {
                     isSelected = false
                     elevation = 0F
                 }

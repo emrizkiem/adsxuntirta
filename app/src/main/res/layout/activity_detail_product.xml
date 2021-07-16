@@ -49,11 +49,22 @@
             android:id="@+id/ic_cart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="24dp"
             android:src="@drawable/ic_cart"
             app:layout_constraintBottom_toBottomOf="@+id/tv_subtitle_home"
             app:layout_constraintEnd_toEndOf="@+id/bg"
             app:layout_constraintTop_toTopOf="@+id/tv_title_home" />
+
+        <com.nex3z.notificationbadge.NotificationBadge
+            android:id="@+id/badge"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ic_cart"
+            app:layout_constraintEnd_toEndOf="@+id/bg"
+            android:textSize="11sp"
+            app:nbMaxTextLength="2"/>
 
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/view_pager"

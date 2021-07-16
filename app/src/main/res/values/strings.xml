@@ -41,4 +41,7 @@
     <string name="choose_courier">Choose Courier</string>
     <string name="choose_payment">Choose Payment</string>
     <string name="checkout_now">Checkout Now</string>
+    <string name="ah_yes_it_s_success">Ah yes it\'s success!</string>
+    <string name="tv_subtitle_success">Furniture yang and beli akan kami \nkirimkan saat ini juga so now please sit \ntight and be ready for it</string>
+    <string name="back_to_shop">Back to Shop</string>
 </resources>

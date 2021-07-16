@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../layout/custom_preview.xml" value="0.2574074074074074" />
+        <entry key="app/src/main/res/drawable/bg_badge.xml" value="0.2574074074074074" />
         <entry key="app/src/main/res/drawable/bg_button_outlined_secondary.xml" value="0.2574074074074074" />
         <entry key="app/src/main/res/drawable/bg_button_outlined_success.xml" value="0.2574074074074074" />
         <entry key="app/src/main/res/drawable/bg_button_primary_rounded.xml" value="0.1" />
@@ -11,13 +12,15 @@
         <entry key="app/src/main/res/drawable/bg_edit_text_rounded.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/bg_primary.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/button_selector.xml" value="0.2574074074074074" />
+        <entry key="app/src/main/res/drawable/ic_cart.xml" value="0.39351851851851855" />
         <entry key="app/src/main/res/drawable/tab_selector.xml" value="0.2574074074074074" />
-        <entry key="app/src/main/res/layout/activity_cart.xml" value="0.31203703703703706" />
+        <entry key="app/src/main/res/layout/activity_cart.xml" value="0.27375485694101026" />
         <entry key="app/src/main/res/layout/activity_detail_product.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.4036458333333333" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.4036458333333333" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/layout/activity_success.xml" value="0.38958333333333334" />
         <entry key="app/src/main/res/layout/item_cart.xml" value="0.33" />
         <entry key="app/src/main/res/layout/item_courier.xml" value="0.31203703703703706" />
         <entry key="app/src/main/res/layout/item_hero.xml" value="0.1" />

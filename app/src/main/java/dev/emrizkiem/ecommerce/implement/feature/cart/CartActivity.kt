@@ -1,5 +1,6 @@
 package dev.emrizkiem.ecommerce.implement.feature.cart
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -8,9 +9,12 @@ import androidx.appcompat.content.res.AppCompatResources
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.button.MaterialButton
+import com.nex3z.notificationbadge.NotificationBadge
 import dev.emrizkiem.ecommerce.R
 import dev.emrizkiem.ecommerce.implement.data.Courier
 import dev.emrizkiem.ecommerce.implement.data.Payment
+import dev.emrizkiem.ecommerce.implement.feature.success.SuccessActivity
 
 class CartActivity : AppCompatActivity() {
 
@@ -21,6 +25,7 @@ class CartActivity : AppCompatActivity() {
     private lateinit var rvCart: RecyclerView
     private lateinit var rvCourier: RecyclerView
     private lateinit var rvPayment: RecyclerView
+    private lateinit var btnCheckout: MaterialButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,10 +34,12 @@ class CartActivity : AppCompatActivity() {
         rvCart = findViewById(R.id.rv_cart)
         rvCourier = findViewById(R.id.rv_courier)
         rvPayment = findViewById(R.id.rv_payment)
+        btnCheckout = findViewById(R.id.btn_checkout)
 
         initDataCart()
         initDataCourier()
         initDataPayment()
+        goToCheckoutNow()
     }
 
     private fun initDataCart() {
@@ -71,6 +78,14 @@ class CartActivity : AppCompatActivity() {
             layoutManager = GridLayoutManager(context, 2)
             setHasFixedSize(true)
             adapter = paymentAdapter
+        }
+    }
+
+    private fun goToCheckoutNow() {
+        btnCheckout.setOnClickListener {
+            val intent = Intent(this, SuccessActivity::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 }

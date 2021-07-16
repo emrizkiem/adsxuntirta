@@ -55,6 +55,15 @@
             app:layout_constraintEnd_toEndOf="@+id/bg"
             app:layout_constraintTop_toTopOf="@+id/tv_title_home" />
 
+        <com.nex3z.notificationbadge.NotificationBadge
+            android:id="@+id/badge"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:nbBackground="@drawable/bg_badge"
+            app:nbMaxTextLength="1"
+            app:layout_constraintTop_toTopOf="@+id/ic_cart"
+            app:layout_constraintStart_toEndOf="@+id/ic_cart"/>
+
         <TextView
             android:id="@+id/tv_shopping_cart"
             android:layout_width="match_parent"
