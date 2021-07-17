@@ -77,109 +77,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bg" />
 
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/ic_live_room"
-        android:layout_width="175dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginStart="16dp"
-        android:src="@drawable/ic_launcher_background"
-        android:scaleType="fitXY"
-        android:adjustViewBounds="true"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal"
         app:layout_constraintTop_toBottomOf="@+id/tv_browse_room"
         app:layout_constraintStart_toStartOf="parent"
-        app:shapeAppearanceOverlay="@style/roundedImageView"/>
-
-    <TextView
-        android:id="@+id/tv_live_room"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="8dp"
-        android:textSize="12sp"
-        android:textColor="@color/black"
-        android:text="@string/live_room"
-        android:fontFamily="@font/fira_sans_medium"
-        app:layout_constraintTop_toTopOf="@+id/ic_live_room"
-        app:layout_constraintEnd_toEndOf="@+id/ic_live_room"/>
-
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/ic_children_room"
-        android:layout_width="175dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="16dp"
-        android:src="@drawable/ic_launcher_background"
-        android:scaleType="fitXY"
-        android:adjustViewBounds="true"
-        app:layout_constraintTop_toBottomOf="@+id/tv_browse_room"
         app:layout_constraintEnd_toEndOf="parent"
-        app:shapeAppearanceOverlay="@style/roundedImageView"/>
-
-    <TextView
-        android:id="@+id/tv_children_room"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="8dp"
-        android:textSize="12sp"
-        android:textColor="@color/black"
-        android:text="@string/children_room"
-        android:fontFamily="@font/fira_sans_medium"
-        app:layout_constraintTop_toTopOf="@+id/ic_children_room"
-        app:layout_constraintEnd_toEndOf="@+id/ic_children_room"/>
-
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/ic_bed_room"
-        android:layout_width="175dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginStart="16dp"
-        android:src="@drawable/ic_launcher_background"
-        android:scaleType="fitXY"
-        android:adjustViewBounds="true"
-        app:layout_constraintTop_toBottomOf="@+id/ic_live_room"
-        app:layout_constraintStart_toStartOf="parent"
-        app:shapeAppearanceOverlay="@style/roundedImageView"/>
-
-    <TextView
-        android:id="@+id/tv_bed_room"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="8dp"
-        android:textSize="12sp"
-        android:textColor="@color/black"
-        android:text="@string/bed_room"
-        android:fontFamily="@font/fira_sans_medium"
-        app:layout_constraintTop_toTopOf="@+id/ic_bed_room"
-        app:layout_constraintEnd_toEndOf="@+id/ic_bed_room"/>
-
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/ic_decoration"
-        android:layout_width="175dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="16dp"
-        android:src="@drawable/ic_launcher_background"
-        android:scaleType="fitXY"
-        android:adjustViewBounds="true"
-        app:layout_constraintTop_toBottomOf="@+id/ic_live_room"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:shapeAppearanceOverlay="@style/roundedImageView"/>
-
-    <TextView
-        android:id="@+id/tv_decoration"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="8dp"
-        android:textSize="12sp"
-        android:textColor="@color/black"
-        android:text="@string/decoration"
-        android:fontFamily="@font/fira_sans_medium"
-        app:layout_constraintTop_toTopOf="@+id/ic_decoration"
-        app:layout_constraintEnd_toEndOf="@+id/ic_decoration"/>
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        tools:listitem="@layout/item_category"
+        tools:itemCount="2"/>
 
     <TextView
         android:id="@+id/tv_just_arrived"
@@ -192,7 +101,7 @@
         android:textColor="@color/black"
         android:text="@string/tv_just_arrived"
         android:fontFamily="@font/fira_sans_medium"
-        app:layout_constraintTop_toBottomOf="@+id/ic_bed_room"
+        app:layout_constraintTop_toBottomOf="@+id/rv_category"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 

@@ -44,4 +44,5 @@
     <string name="ah_yes_it_s_success">Ah yes it\'s success!</string>
     <string name="tv_subtitle_success">Furniture yang and beli akan kami \nkirimkan saat ini juga so now please sit \ntight and be ready for it</string>
     <string name="back_to_shop">Back to Shop</string>
+    <string name="format_price">Rp%1$s</string>
 </resources>

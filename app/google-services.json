@@ -1,18 +1,27 @@
 {
   "project_info": {
     "project_number": "738078285718",
+    "firebase_url": "https://ecommerce-smi-default-rtdb.firebaseio.com",
     "project_id": "ecommerce-smi",
     "storage_bucket": "ecommerce-smi.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:738078285718:android:d3daab5958fd51b709c7b7",
+        "mobilesdk_app_id": "1:738078285718:android:15bed0d556b9a85609c7b7",
         "android_client_info": {
           "package_name": "dev.emrizkiem.ecommerce"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "738078285718-6c5ai4ubtrlcu16r0all7v15bcjr09i0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dev.emrizkiem.ecommerce",
+            "certificate_hash": "a55a959578fe361ced5b2a7c95896df69b5b4102"
+          }
+        },
         {
           "client_id": "738078285718-v0n7r9usggpbb3sukv5v54f2i79cmtfd.apps.googleusercontent.com",
           "client_type": 3
